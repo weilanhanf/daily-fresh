@@ -1,0 +1,97 @@
+{% extends 'df_goods/base.html' %}
+
+{% block center_content %}
+
+	<div class="main_wrap clearfix">
+		<div class="l_wrap fl clearfix">
+			<div class="new_goods">
+				<h3>新品推荐</h3>
+				<ul>
+{#					<li>#}
+{#						<a href="#"><img src="/static/images/goods/goods001.jpg"></a>#}
+{#						<h4><a href="#">进口柠檬</a></h4>#}
+{#						<div class="prize">￥3.90</div>#}
+{#					</li>#}
+                    {% for goods in news %}
+{#                        新品推荐两种#}
+                        <li>
+                            <a href="/{{ goods.id }}"><img src="/static/{{ goods.gpic }}"></a>
+    						<h4><a href="/{{ goods.id }}">{{ goods.gtitle }}</a></h4>
+    						<div class="prize">￥{{ goods.gprice }}</div>
+                        </li>
+                    {% endfor %}
+				</ul>
+			</div>
+		</div>
+
+		<div class="r_wrap fr clearfix">
+			<div class="sort_bar">
+{#				<a href="#" class="active">默认</a>#}
+{#				<a href="#">价格</a>#}
+{#				<a href="#">人气</a>#}
+
+{#          注意视图函数中的传参顺序 另外在url中传递的链接全为字符型  #}
+                <a href="/list{{ typeinfo.id }}_1_1"
+                   {% if sort == '1' %}
+                    class="active"
+                   {% endif %}
+                    >默认</a>
+                <a href="/list{{ typeinfo.id }}_1_2"
+                   {% if sort == '2' %}
+                    class="active"
+                   {% endif %}
+                    >价格</a>
+                <a href="/list{{ typeinfo.id }}_1_3"
+                   {% if sort == '3' %}
+                    class="active"
+                   {% endif %}
+                    >人气</a>
+			</div>
+
+			<ul class="goods_type_list clearfix">
+{#				<li>#}
+{#					<a href="detail.html"><img src="/static/images/goods/goods003.jpg"></a>#}
+{#					<h4><a href="detail.html">大兴大棚草莓</a></h4>#}
+{#					<div class="operate">#}
+{#						<span class="prize">￥16.80</span>#}
+{#						<span class="unit">16.80/500g</span>#}
+{#						<a href="#" class="add_goods" title="加入购物车"></a>#}
+{#					</div>#}
+{#				</li>#}
+                {%  for g in page %}
+                <li>
+					<a href="/{{ g.id }}/"><img src="/static/{{ g.gpic }}/"></a>
+					<h4><a href="/{{ g.id }}/">{{ g.gtitle }}</a></h4>
+					<div class="operate">
+						<span class="prize">￥{{ g.gprice }}</span>
+						<span class="unit">{{ g.gunit }}</span>
+						<a href="/cart/add{{ g.id }}_1/" class="add_goods" title="加入购物车"></a>
+{#						<a href="javasript:;/" class="add_goods" title="加入购物车"></a>#}
+					</div>
+				</li>
+                {% endfor %}
+			</ul>
+
+			<div class="pagenation">
+{#                判断是否是第一页#}
+                {% if page.has_previous %}
+                    <a href="/list{{ typeinfo.id }}_{{ page.previous_page_number }}_{{ sort }}">上一页</a>
+                {% endif %}
+
+                {% for pindex in paginator.page_range %}
+                    {% if pindex == page.number %}
+                        <a href="/list{{ typeinfo.id }}_{{pindex}}_{{ sort }}" class="active">{{ pindex }}</a>
+                    {% else %}
+                        <a href="/list{{ typeinfo.id }}_{{pindex}}_{{ sort }}">{{ pindex }}</a>
+                    {% endif %}
+                {% endfor %}
+
+{#                是否又第二页#}
+                {% if page.has_next %}
+				<a href="/list{{ typeinfo.id }}_{{ page.next_page_number }}_{{ sort }}">下一页></a>
+                {% endif %}
+			</div>
+		</div>
+	</div>
+
+{% endblock center_content %}

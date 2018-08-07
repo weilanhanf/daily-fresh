@@ -1,0 +1,71 @@
+{% extends 'base_foot.html' %}
+
+{% block head %}
+<script>
+    $(function () {
+        name_error = false;
+        pwd_error = false;
+
+        if({{ error_name }}==1){
+            $('.user_error').html('用户名错误').show();
+        }
+        if({{ error_pwd }}==1){
+            $('.pwd_error').html('密码错误').show();
+        }
+        $('.name_input').blur(function () {
+            if($('.name_input').val().length=0){
+                $('.user_error').html('请填写用户名').show();
+                name_error = false;
+            }else{
+                $('.user_error').hide();
+                name_error = true;
+            }
+        });
+        $('.pass_input').blur(function () {
+            if($('.pass_input').val().length=0){
+                $('.pwd_error').html('请输入密码').show();
+                pwd_error = false;
+            }else{
+                $('.pwd_error').hide();
+                pwd_error = true;
+            }
+        })
+    })
+</script>
+{% endblock head %}
+
+{% block body %}
+	<div class="login_top clearfix">
+		<a href="index.html" class="login_logo"><img src="/static/images/logo02.png"></a>
+	</div>
+
+	<div class="login_form_bg">
+		<div class="login_form_wrap clearfix">
+			<div class="login_banner fl"></div>
+			<div class="slogan fl">日夜兼程 · 急速送达</div>
+			<div class="login_form fr">
+				<div class="login_title clearfix">
+					<h1>用户登录</h1>
+					<a href="/user/register/">立即注册</a>
+				</div>
+				<div class="form_input">
+					<form action="/user/login_handle/" method="post">
+                        {% csrf_token %}
+						<input type="text" name="username" class="name_input" value="{{ uname }}" placeholder="请输入用户名">
+						<div class="user_error">输入错误</div>
+						<input type="password" name="pwd" class="pass_input" value="{{ upwd }}" placeholder="请输入密码">
+{#                        在cookie设置的情况下value值保证页面刷新之后保证仍旧能够在页面看到值#}
+						<div class="pwd_error">输入错误</div>
+						<div class="more_input clearfix">
+							<input type="checkbox" name="jizhu" value="1" checked="checked">
+							<label>记住用户名</label>
+							<a href="#">忘记密码</a>
+						</div>
+						<input type="submit" name="" value="登录" class="input_submit">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock body %}

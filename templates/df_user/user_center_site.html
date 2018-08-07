@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block center_body %}
+
+
+	<div class="main_con clearfix">
+		<div class="left_menu_con clearfix">
+			<h3>用户中心</h3>
+			<ul>
+				<li><a href="/user/info/">· 个人信息</a></li>
+				<li><a href="/user/order/1">· 全部订单</a></li>
+				<li><a href="/user/site/" class="active">· 收货地址</a></li>
+			</ul>
+		</div>
+		<div class="right_content clearfix">
+				<h3 class="common_title2">收货地址</h3>
+				<div class="site_con">
+					<dl>
+                        <dt>收件人：{{ user.ushou }}</dt>
+                        <dt>电话：{{ user.uphone }}</dt>
+                        <dt>当前地址：{{ user.uaddress }}</dt>
+{#                        <a href="/user/place_order" style="display: block; width: 80px; height:30px; line-height: 30px; text-align: center;font-size: 13px; " class="info_submit">提交订单</a>#}
+					</dl>
+				</div>
+				<h3 class="common_title2">编辑地址</h3>
+				<div class="site_con">
+					<form action="/user/site/" method="post">
+                        {% csrf_token %}
+						<div class="form_group">
+							<label>收件人：</label>
+							<input type="text" name="ushou" value="{{ user.ushou }}">
+						</div>
+                        <div class="form_group">
+                            <label>手机：</label>
+                            <input type="text" name="uphone" value="{{ user.uphone }}">
+                        </div>
+                        <div class="form_group">
+                            <label>邮编：</label>
+                            <input type="text" name="uyoubian" value="{{ user.uyoubian }}">
+                        </div>
+                        <div class="form_group form_group2">
+                            <label>详细地址：</label>
+                            <textarea class="site_area" name="uaddress" >{{ user.uaddress }}</textarea>
+                        </div>
+						<input type="submit" name="" value="修改地址" class="info_submit">
+					</form>
+				</div>
+		</div>
+	</div>
+
+
+{% endblock center_body %}

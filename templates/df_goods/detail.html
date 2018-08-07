@@ -1,0 +1,161 @@
+{% extends 'df_goods/base.html' %}
+
+{% block head %}
+    <script type="text/javascript">
+
+{#  通过绑定js事件实现随着商品数量的增长商品总价上涨#}
+    function plus() {
+        num = parseFloat($('.num_show').val());
+        $('.num_show').val(num+1);
+        $('.num_show').blur();
+
+    }
+    function minus() {
+        num = parseFloat($('.num_show').val());
+        if(num>1)
+        {
+            $('.num_show').val(num-1);
+            $('.num_show').blur();
+        }
+{#商品的数量不可以小于1#}
+
+    }
+    $(function () {
+        $('.num_show').blur(function () {
+             num = parseInt($('.num_show').val());
+             if(num<=1)
+             {
+                 num = 1;
+             }
+             kucun = parseInt($('.goods_kucun').text());
+             if(num>=kucun)
+             {
+                 num = kucun;
+             }
+             price = parseFloat($('#gprice').text());
+             total = num*price;
+             $('.num_show').val(num);
+             $('#gtotal').text(total.toFixed(2)+'元');
+{#             $('add_cart').attr('href', '/cart/add'+$('gid').val())#}
+
+        });
+    });
+    </script>
+
+{% endblock head %}
+
+{% block center_content %}
+	<div class="goods_detail_con clearfix">
+		<div class="goods_detail_pic fl"><img src="/static/{{ goods.gpic }}"></div>
+
+		<div class="goods_detail_list fr">
+			<h3>{{ goods.gtitle }}</h3>
+			<p>{{ goods.gjianjie }}</p>
+			<div class="prize_bar">
+				<span class="show_pirze">¥<em id="gprice">{{ goods.gprice }}</em></span>
+				<span class="show_unit">单  位：{{ goods.gunit }}</span>
+				<span class="show_unit">库  存：<span class="goods_kucun">{{ goods.gkucun }}</span></span>
+			</div>
+			<div class="goods_num clearfix">
+				<div class="num_name fl">数 量：</div>
+				<div class="num_add fl">
+					<input type="text" class="num_show fl" value="1">
+					<a href="javascript:plus();" class="add fr">+</a>
+					<a href="javascript:minus();" class="minus fr">-</a>
+				</div> 
+			</div>
+			<div class="total">总价：<em id="gtotal">{{ goods.gprice }}元</em></div>
+			<div class="operate_btn">
+                {% if request.session.user_name|default:'' != '' %}
+                    <a href="javascript:;" class="buy_btn">立即购买</a>
+                {% else %}
+                    <a href="/user/login/" class="buy_btn">立即购买</a>
+                {% endif %}
+                {% if request.session.user_name|default:'' != '' %}
+                    <a href="javascript:;" class="add_cart" id="add_cart">加入购物车</a>
+                {% else %}
+                    <a href="/user/login/" class="add_cart" id="add_cart">加入购物车</a>
+                {% endif %}
+			</div>
+		</div>
+	</div>
+
+	<div class="main_wrap clearfix">
+		<div class="l_wrap fl clearfix">
+			<div class="new_goods">
+				<h3>新品推荐</h3>
+				<ul>
+                    {% for goods in news %}
+					<li>
+						<a href="/{{ goods.id }}"><img src="/static/{{ goods.gpic }}"></a>
+						<h4><a href="#">{{ goods.gtitle }}</a></h4>
+						<div class="prize">￥{{ goods.gprice }}</div>
+					</li>
+                    {%  endfor %}
+                </ul>
+			</div>
+		</div>
+
+		<div class="r_wrap fr clearfix">
+			<ul class="detail_tab clearfix">
+				<li class="active">商品介绍</li>
+				<li>评论</li>
+			</ul>
+
+			<div class="tab_content">
+				<dl>
+					<dt>商品详情：</dt>
+					<dd>{{ goods.gcontent|safe }}</dd>
+				</dl>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="add_jump"></div>
+
+	<script type="text/javascript" src="/js/jquery-1.12.2.js"></script>
+	<script type="text/javascript">
+		var $add_x = $('#add_cart').offset().top;
+		var $add_y = $('#add_cart').offset().left;
+
+		var $to_x = $('#show_count').offset().top;
+		var $to_y = $('#show_count').offset().left;
+
+		$(".add_jump").css({'left':$add_y+80,'top':$add_x+10,'display':'block'});
+		$('#add_cart').click(function() {
+{#            alert(url);#}
+            alert('asdf');
+            {#		    先判断是否登录#}
+            if ($('.login_btn').text().indexOf('登录') >= 0) {
+                alert('请登陆后购买');
+                location.href('/user/login/');
+                return;
+
+            }
+            {#            购物车添加动画#}
+            $(".add_jump").stop().animate({
+                    'left': $to_y + 7,
+                    'top': $to_x + 7
+                },
+                "fast", function () {
+                    $(".add_jump").fadeOut('fast', function () {
+{#                            count = $('.num_show').val();#}
+{#                            alert(count);#}
+{#                            $('#show_count').html(count);#}
+                });
+
+            });
+            num = parseInt($('.num_show').val());
+            $.get('/cart/add{{ goods.id }}_'+num+'/',function (data) {
+                $('#show_count').text(data.count);
+            });
+
+        });
+		$.get('/cart/',function (data) {
+{#                alert('data.count');#}
+                $('#show_count').text(data.count);
+            });
+	</script>
+
+{% endblock center_content %}
