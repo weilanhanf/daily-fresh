@@ -1,0 +1,21 @@
+from django.db import models
+
+# Create your models here.
+class OrderInfo(models.Model):#大订单
+
+    oid = models.CharField(max_length=20, primary_key=True, verbose_name="大订单号")
+    user = models.ForeignKey('df_user.UserInfo', on_delete=models.CASCADE, verbose_name="订单用户")
+    odate = models.DateTimeField(auto_now=True, verbose_name="时间")
+    oIsPay = models.BooleanField(default=False, verbose_name="是否支付")
+    ototal = models.DecimalField(max_digits=8, decimal_places=2, verbose_name="总价")
+    oaddress = models.CharField(max_length=150, verbose_name="订单地址")
+    #虽然订单总价可以由多个商品的单价以及数量求得，但是由于用户订单的总价的大量使用，忽略total的冗余度
+
+#无法实现：真实支付，物流信息
+
+class OrderDetailInfo(models.Model):#大订单中的具体某一商品订单
+
+    goods = models.ForeignKey('df_goods.GoodsInfo', on_delete=models.CASCADE, verbose_name="商品")#关联商品信息
+    order = models.ForeignKey('OrderInfo', on_delete=models.CASCADE, verbose_name="订单")
+    price = models.DecimalField(max_digits=6, decimal_places=2, verbose_name="商品价格")
+    count = models.IntegerField(verbose_name="商品数")

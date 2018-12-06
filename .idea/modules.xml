@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../MxOnline/.idea/MxOnline.iml" filepath="$PROJECT_DIR$/../MxOnline/.idea/MxOnline.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/daily_fresh_demo.iml" filepath="$PROJECT_DIR$/.idea/daily_fresh_demo.iml" />
     </modules>
   </component>
