@@ -13,5 +13,4 @@ urlpatterns = [
     url('^list(\d+)_(\d+)_(\d+)/$', views.list),
     url('^(\d+)/$', views.detail),
     url(r'^search/', MySearchView()),  # 全文检索
-
 ]

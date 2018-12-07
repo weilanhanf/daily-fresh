@@ -6,15 +6,14 @@ from df_order import models
 @admin.register(models.OrderInfo)
 class OrderInfoAdmin(admin.ModelAdmin):
 
-    list_display = "__all__"
+    list_display = []
     list_per_page = 5
-    list_filter = "__all__"
+    list_filter = []
 
 
 @admin.register(models.OrderDetailInfo)
 class OrderDetailInfoAdmin(admin.ModelAdmin):
 
-    list_display = "__all__"
+    list_display = []
     list_per_page = 5
-    list_filter = "__all__"
-
+    list_filter = []
