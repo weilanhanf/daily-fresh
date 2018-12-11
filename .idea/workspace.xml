@@ -5,34 +5,73 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45668937-8df2-4ece-9cfa-fd4649cb4a1c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/whoosh_index/_MAIN_458.toc" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/cart.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/css/reset.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/detail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/adv01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/adv02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/banner01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/banner02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/banner03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/banner04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/banner05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/banner06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/down.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/fruit.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods001.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods002.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods003.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods004.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods005.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods006.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods007.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods008.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods009.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods010.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods011.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods012.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods013.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods014.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods015.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods016.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods017.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods018.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods019.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods020.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods021.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods_detail.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/icons02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/interval_line.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/left_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/login_banner.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/logo02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/pay_icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/register_banner.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/shop_cart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/slide.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/slide02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/slide03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/slide04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/js/jquery-1.12.4.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/js/jquery-ui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/js/jquery.cookie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/js/register.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/js/slide.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/place_order.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/register.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/user_center_info.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/user_center_order.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/user_center_site.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/页面说明.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_cart/__init__.py" afterPath="$PROJECT_DIR$/apps/df_cart/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_cart/admin.py" afterPath="$PROJECT_DIR$/apps/df_cart/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_cart/apps.py" afterPath="$PROJECT_DIR$/apps/df_cart/apps.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_cart/models.py" afterPath="$PROJECT_DIR$/apps/df_cart/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_cart/urls.py" afterPath="$PROJECT_DIR$/apps/df_cart/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_cart/views.py" afterPath="$PROJECT_DIR$/apps/df_cart/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_goods/__init__.py" afterPath="$PROJECT_DIR$/apps/df_goods/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_goods/admin.py" afterPath="$PROJECT_DIR$/apps/df_goods/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_goods/apps.py" afterPath="$PROJECT_DIR$/apps/df_goods/apps.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_goods/models.py" afterPath="$PROJECT_DIR$/apps/df_goods/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_goods/urls.py" afterPath="$PROJECT_DIR$/apps/df_goods/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_goods/views.py" afterPath="$PROJECT_DIR$/apps/df_goods/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_order/__init__.py" afterPath="$PROJECT_DIR$/apps/df_order/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_order/admin.py" afterPath="$PROJECT_DIR$/apps/df_order/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_order/apps.py" afterPath="$PROJECT_DIR$/apps/df_order/apps.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_order/models.py" afterPath="$PROJECT_DIR$/apps/df_order/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_order/urls.py" afterPath="$PROJECT_DIR$/apps/df_order/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_order/views.py" afterPath="$PROJECT_DIR$/apps/df_order/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_user/__init__.py" afterPath="$PROJECT_DIR$/apps/df_user/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_user/admin.py" afterPath="$PROJECT_DIR$/apps/df_user/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_user/apps.py" afterPath="$PROJECT_DIR$/apps/df_user/apps.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_user/models.py" afterPath="$PROJECT_DIR$/apps/df_user/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_user/urls.py" afterPath="$PROJECT_DIR$/apps/df_user/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_user/views.py" afterPath="$PROJECT_DIR$/apps/df_user/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily_fresh_demo/settings.py" afterPath="$PROJECT_DIR$/daily_fresh_demo/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -102,7 +141,20 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/df_cart/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="11" column="48" lean-forward="false" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -260,20 +312,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="daily_fresh_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daily_fresh_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daily_fresh_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apps" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -645,8 +683,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18186696" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18186696" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875144" sideWeight="0.49112427" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272933" sideWeight="0.5064378" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25590128" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1086,21 +1125,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/df_cart/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/df_cart/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/df_cart/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="48" lean-forward="false" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
