@@ -36,12 +36,12 @@
         <ul class="goods_type_list clearfix">
             {%  for item in page %}
             <li>
-                <a href="/{{ item.object.id }}/"><img src="/static/{{ item.object.gpic }}/"></a>
-                <h4><a href="/{{ item.object.id }}/">{{ item.object.gtitle }}</a></h4>
+                <a href="/{{ item.id }}/"><img src="/static/{{ item.gpic }}/"></a>
+                <h4><a href="/{{ item.id }}/">{{ item.gtitle }}</a></h4>
                 <div class="operate">
-                    <span class="prize">￥{{ item.object.gprice }}</span>
-                    <span class="unit">{{ item.object.gunit }}</span>
-                    <a href="/cart/add{{ item.object.id }}_1/" class="add_goods" title="加入购物车"></a>
+                    <span class="prize">￥{{ item.gprice }}</span>
+                    <span class="unit">{{ item.gunit }}</span>
+                    <a href="/cart/add{{ item.id }}_1/" class="add_goods" title="加入购物车"></a>
 {#						<a href="javasript:;/" class="add_goods" title="加入购物车"></a>#}
                 </div>
             </li>

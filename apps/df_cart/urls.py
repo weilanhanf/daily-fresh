@@ -4,7 +4,7 @@ from django.conf.urls import url
 
 from df_cart import views
 
-app_name = 'apps.df_cart'
+app_name = 'df_cart'
 
 urlpatterns = [
     url(r'^$', views.cart),

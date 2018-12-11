@@ -5,73 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45668937-8df2-4ece-9cfa-fd4649cb4a1c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/cart.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/css/reset.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/detail.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/adv01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/adv02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/banner01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/banner02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/banner03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/banner04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/banner05.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/banner06.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/down.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/fruit.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods001.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods002.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods003.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods004.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods005.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods006.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods007.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods008.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods009.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods010.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods011.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods012.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods013.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods014.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods015.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods016.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods017.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods018.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods019.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods020.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods/goods021.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/goods_detail.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/icons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/icons02.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/interval_line.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/left_bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/login_banner.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/logo02.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/pay_icons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/register_banner.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/shop_cart.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/slide.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/slide02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/slide03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/images/slide04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/js/jquery-1.12.4.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/js/jquery-ui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/js/jquery.cookie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/js/register.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/js/slide.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/place_order.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/register.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/user_center_info.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/user_center_order.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/user_center_site.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/天天生鲜项目页面/页面说明.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apps/df_goods/search_indexes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/search/indexes/df_goods/goodsinfo_text.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/search/search.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/whoosh_index/MAIN_4kejaqzinp9bh5qw.seg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/whoosh_index/MAIN_6z2lx59uy9tmtqwb.seg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/whoosh_index/MAIN_WRITELOCK" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/whoosh_index/MAIN_dcdpbqg84ysmt6ne.seg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/whoosh_index/MAIN_dn21epuai1mmkxxx.seg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/whoosh_index/MAIN_f0gukmlbtq5vajcq.seg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/whoosh_index/_MAIN_460.toc" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_cart/models.py" afterPath="$PROJECT_DIR$/apps/df_cart/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_cart/urls.py" afterPath="$PROJECT_DIR$/apps/df_cart/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_goods/urls.py" afterPath="$PROJECT_DIR$/apps/df_goods/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_goods/views.py" afterPath="$PROJECT_DIR$/apps/df_goods/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/df_user/views.py" afterPath="$PROJECT_DIR$/apps/df_user/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily_fresh_demo/settings.py" afterPath="$PROJECT_DIR$/daily_fresh_demo/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily_fresh_demo/urls.py" afterPath="$PROJECT_DIR$/daily_fresh_demo/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base_foot.html" afterPath="$PROJECT_DIR$/templates/base_foot.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/df_goods/index.html" afterPath="$PROJECT_DIR$/templates/df_goods/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -141,20 +96,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/apps/df_cart/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="48" lean-forward="false" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -166,7 +108,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Json</find>
       <find>Js</find>
       <find>add</find>
       <find>StemmingAnalyzer()</find>
@@ -196,6 +137,7 @@
       <find>MySearchView</find>
       <find>whoosh_cn_backend</find>
       <find>analyzer=StemmingAnalyzer()</find>
+      <find>q</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -211,10 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/df_user/urls.py" />
-        <option value="$PROJECT_DIR$/templates/df_order/place_order.html" />
-        <option value="$PROJECT_DIR$/templates/df_user/user_center_info.html" />
-        <option value="$PROJECT_DIR$/templates/df_user/user_center_site.html" />
         <option value="$PROJECT_DIR$/templates/search/search.html" />
         <option value="$PROJECT_DIR$/templates/df_user/user_center_order.html" />
         <option value="$PROJECT_DIR$/df_cart/views.py" />
@@ -231,22 +169,16 @@
         <option value="F:/Django拓展/jingpinke_html/首页 - 精品课 - Home Page_files/base.css" />
         <option value="$PROJECT_DIR$/df_goods/views.py" />
         <option value="$PROJECT_DIR$/df_goods/models.py" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/df_user/admin.py" />
-        <option value="$PROJECT_DIR$/daily_fresh_demo/urls.py" />
         <option value="$USER_HOME$/Envs/dailyfresh/Lib/site-packages/haystack/backends/ChineseAnalyzer.py" />
         <option value="$USER_HOME$/Envs/dailyfresh/Lib/site-packages/haystack/backends/whoosh_cn_backend.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/apps/df_goods/models.py" />
-        <option value="$PROJECT_DIR$/daily_fresh_demo/settings.py" />
         <option value="$PROJECT_DIR$/apps/df_cart/__init__.py" />
         <option value="$PROJECT_DIR$/apps/df_cart/apps.py" />
-        <option value="$PROJECT_DIR$/apps/df_cart/urls.py" />
         <option value="$PROJECT_DIR$/apps/df_cart/views.py" />
         <option value="$PROJECT_DIR$/apps/df_goods/__init__.py" />
         <option value="$PROJECT_DIR$/apps/df_goods/apps.py" />
-        <option value="$PROJECT_DIR$/apps/df_goods/urls.py" />
-        <option value="$PROJECT_DIR$/apps/df_goods/views.py" />
         <option value="$PROJECT_DIR$/apps/df_order/__init__.py" />
         <option value="$PROJECT_DIR$/apps/df_order/apps.py" />
         <option value="$PROJECT_DIR$/apps/df_order/urls.py" />
@@ -254,14 +186,24 @@
         <option value="$PROJECT_DIR$/apps/df_order/views.py" />
         <option value="$PROJECT_DIR$/apps/df_user/apps.py" />
         <option value="$PROJECT_DIR$/apps/df_user/urls.py" />
-        <option value="$PROJECT_DIR$/apps/df_user/views.py" />
-        <option value="$PROJECT_DIR$/apps/df_cart/models.py" />
         <option value="$PROJECT_DIR$/apps/df_order/models.py" />
         <option value="$PROJECT_DIR$/apps/df_user/models.py" />
         <option value="$PROJECT_DIR$/apps/df_user/admin.py" />
         <option value="$PROJECT_DIR$/apps/df_order/admin.py" />
         <option value="$PROJECT_DIR$/apps/df_goods/admin.py" />
         <option value="$PROJECT_DIR$/apps/df_cart/admin.py" />
+        <option value="$PROJECT_DIR$/templates/df_goods/index.html" />
+        <option value="$PROJECT_DIR$/apps/df_goods/search_indexes.py" />
+        <option value="$PROJECT_DIR$/apps/df_user/views.py" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/apps/df_cart/urls.py" />
+        <option value="$PROJECT_DIR$/templates/df_goods/ordinary_search.html" />
+        <option value="$PROJECT_DIR$/templates/base_foot.html" />
+        <option value="$PROJECT_DIR$/apps/df_cart/models.py" />
+        <option value="$PROJECT_DIR$/daily_fresh_demo/urls.py" />
+        <option value="$PROJECT_DIR$/apps/df_goods/urls.py" />
+        <option value="$PROJECT_DIR$/daily_fresh_demo/settings.py" />
+        <option value="$PROJECT_DIR$/apps/df_goods/views.py" />
       </list>
     </option>
   </component>
@@ -293,31 +235,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daily_fresh_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daily_fresh_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daily_fresh_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -346,6 +263,45 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="daily_fresh_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="daily_fresh_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="daily_fresh_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="daily_fresh_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="daily_fresh_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -356,17 +312,17 @@
     <property name="SearchEverywhereHistoryKey" value="page_name&#9;null&#9;null&#10;guest_cart&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Py35\Django\daily_fresh_demo\templates\df_cart" />
-      <recent name="F:\Py35\Django\daily_fresh_demo\static\df_goods" />
-      <recent name="F:\Py35\Django\daily_fresh_demo\templates\df_goods" />
-      <recent name="F:\Py35\Django\daily_fresh_demo\templates\df_user" />
-      <recent name="F:\Py35\Django\daily_fresh_demo\static" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Py35\Django\daily_fresh_demo\apps" />
       <recent name="F:\Py35\Django\daily_fresh_demo" />
       <recent name="F:\Py35\Django\daily_fresh_demo\templates\df_order" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Py35\Django\daily_fresh_demo\templates\df_goods" />
+      <recent name="F:\Py35\Django\daily_fresh_demo\templates\df_cart" />
+      <recent name="F:\Py35\Django\daily_fresh_demo\static\df_goods" />
+      <recent name="F:\Py35\Django\daily_fresh_demo\templates\df_user" />
+      <recent name="F:\Py35\Django\daily_fresh_demo\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -683,17 +639,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18186696" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18991417" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875144" sideWeight="0.49112427" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272933" sideWeight="0.5064378" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25590128" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.49785408" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272933" sideWeight="0.49356222" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29671574" sideWeight="0.48402366" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38391846" sideWeight="0.48402366" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24970414" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39411098" sideWeight="0.4833691" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4745187" sideWeight="0.4833691" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -743,40 +698,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/df_user/user_center_info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/df_user/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/df_user/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/Django拓展/jingpinke_html/repr_str.py" />
-    <entry file="file://F:/Django拓展/jingpinke_html/学习首页 - 精品课.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="375" column="0" lean-forward="true" selection-start-line="375" selection-start-column="0" selection-end-line="375" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/Django拓展/jingpinke_html/首页 - 精品课 - Home Page_files/center .png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://F:/Django拓展/jingpinke_html/首页 - 精品课 - Home Page_files/base.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
@@ -788,13 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="358">
           <caret line="311" column="16" lean-forward="false" selection-start-line="311" selection-start-column="16" selection-end-line="311" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/df_goods/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="62" lean-forward="true" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -826,27 +740,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/df_goods/goods003.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/2cf28212/1cf85d03-d03a-4ff8-a82c-248044b60f6f/main.df_goods_goodsinfo">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -885,30 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/df_goods/search_indexes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="6" column="61" lean-forward="true" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daily_fresh_demo/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="13" column="68" lean-forward="true" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -922,7 +805,7 @@
         <state relative-caret-position="42">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
-            <element signature="e#47#91#0" expanded="true" />
+            <element signature="e#47#91#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -935,29 +818,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/df_cart/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding>
-            <element signature="e#47#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/df_cart/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daily_fresh_demo/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -977,54 +841,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/df_goods/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/df_goods/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding>
-            <element signature="e#48#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/df_goods/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/df_goods/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/df_user/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/df_user/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
           <folding>
-            <element signature="e#47#79#0" expanded="true" />
+            <element signature="e#47#79#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1033,7 +855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1041,7 +862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1061,28 +881,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/df_goods/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="6" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/df_order/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/df_order/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -1099,9 +901,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="23" column="52" lean-forward="true" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1109,9 +908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
           <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1119,16 +915,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="15" column="95" lean-forward="false" selection-start-line="15" selection-start-column="95" selection-end-line="15" selection-end-column="95" />
-          <folding>
-            <element signature="e#29#61#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/df_cart/models.py">
+    <entry file="file://$PROJECT_DIR$/templates/df_goods/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        <state relative-caret-position="126">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1136,10 +929,184 @@
     <entry file="file://$PROJECT_DIR$/apps/df_cart/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
-          <caret line="11" column="48" lean-forward="false" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#32#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/dailyfresh/Lib/site-packages/haystack/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/dailyfresh/Lib/site-packages/haystack/indexes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="79" column="6" lean-forward="false" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/search/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/df_user/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="65" column="42" lean-forward="true" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#24#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/df_goods/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/df_cart/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding>
+            <element signature="e#47#79#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/df_goods/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/df_goods/ordinary_search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="64" column="34" lean-forward="true" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base_foot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/df_goods/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="38" column="52" lean-forward="true" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/df_goods/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="17" column="6" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="62" column="73" lean-forward="false" selection-start-line="62" selection-start-column="73" selection-end-line="62" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/df_order/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="32" column="42" lean-forward="true" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/df_cart/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="14" column="52" lean-forward="false" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/df_goods/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding>
+            <element signature="e#48#80#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daily_fresh_demo/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/df_goods/search_indexes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/df_goods/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="210" column="0" lean-forward="true" selection-start-line="210" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#3723#5759#0" expanded="false" />
+            <element signature="e#5790#5936#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daily_fresh_demo/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="119" column="12" lean-forward="true" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

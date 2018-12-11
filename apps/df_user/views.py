@@ -51,12 +51,14 @@ def register_handle(request):
     # return redirect('/user/login/')
     return render(request, 'df_user/login.html', context)
 
+
 def register_exist(request):
     uname=request.GET.get('uname')
     count=UserInfo.objects.filter(uname=uname).count()
     if count == 0:
         print('当前用户名可用')
     return JsonResponse({'count':count})
+
 
 # @user_decorator.request_detail
 def login(request):

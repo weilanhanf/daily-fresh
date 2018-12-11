@@ -30,7 +30,6 @@ INSTALLED_APPS = [
     'df_cart',
     'df_order',
     'tinymce',  # 使用富文本编辑框要在settings文件中安装
-    'haystack',  # 全文检索
 ]
 
 MIDDLEWARE = [
@@ -127,17 +126,3 @@ TINYMCE_DEFAULT_CONFIG = {
     'width': 600,
     'height': 400,
 }
-
-HAYSTACK_CONNECTIONS = {
-    'default': {
-        # 使用whoosh引擎
-        'ENGINE': 'haystack.backends.whoosh_cn_backend.WhooshEngine',
-        # 添加索引文件路径
-        'PATH': os.path.join(BASE_DIR, 'whoosh_index'),
-    }
-}
-
-# 当修改删除数据时，自动生成索引
-HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
-# HAYSTACK_DEFAULT_OPERATOR = 'OR'
-HAYSTACK_SEARCH_RESULTS_PER_PAGE = 18  # 每一页显示多少数据

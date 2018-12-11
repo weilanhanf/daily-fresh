@@ -1,6 +1,5 @@
 from django.core.paginator import Paginator
-from django.shortcuts import render, HttpResponse
-from haystack.views import SearchView
+from django.shortcuts import render
 
 from df_cart.models import CartInfo
 from df_user.models import GoodsBrowser
@@ -10,7 +9,6 @@ from df_goods.models import GoodsInfo, TypeInfo
 def index(request):
     # 查询各个分类的最新4条，最热4条数据
     typelist = TypeInfo.objects.all()
-    print(len(typelist), 'asdf')
     # 连表操作（了不起的双下划线）利用双下划线和 _set将表之间的操作连接起来
     type0 = typelist[0].goodsinfo_set.order_by('-id')[0:4]  # 按照最新上传的水果显示
     type01 = typelist[0].goodsinfo_set.order_by('-gclick')[0:4]  # 按照用户点击量上传
@@ -28,13 +26,13 @@ def index(request):
     # 判断是否存在登录状态
     try:
         user_id = request.session['user_id']
-        cart_count = CartInfo.objects.filter(user_id=int(user_id)).count
+        cart_count = CartInfo.objects.filter(user_id=int(user_id)).count()
     except:
         cart_count = 0
     context = {
         'title': '首页',
         'cart_count': cart_count,
-        'guest_cart':1,
+        'guest_cart': 1,
         'type0': type0, 'type01': type01,
         'type1': type1, 'type11': type11,
         'type2': type2, 'type21': type21,
@@ -77,11 +75,18 @@ def index(request):
 def list(request, tid, pindex, sort):
     # tid：商品种类信息  pindex：商品页码 sort：商品显示分类方式
     typeinfo = TypeInfo.objects.get(pk=int(tid))
+
     # 根据主键查找当前的商品分类  海鲜或者水果
     news = typeinfo.goodsinfo_set.order_by('-id')[0:2]
     # list.html左侧最新商品推荐
     goods_list = []
     # list中间栏商品显示方式
+    cart_count, guest_cart = 0, 0
+    user_id = request.session['user_id']
+    if user_id:
+        guest_cart = 1
+        cart_count = CartInfo.objects.filter(user_id=int(user_id)).count()
+
     if sort == '1':  # 默认最新
         goods_list = GoodsInfo.objects.filter(gtype_id=int(tid)).order_by('-id')
     elif sort == '2':  # 按照价格
@@ -95,7 +100,8 @@ def list(request, tid, pindex, sort):
     page = paginator.page(int(pindex))
     context = {
         'title': '商品列表',
-        'guest_cart': 1,
+        'guest_cart': guest_cart,
+        'cart_count': cart_count,
         'page': page,
         'paginator': paginator,
         'typeinfo': typeinfo,
@@ -169,11 +175,36 @@ def cart_count(request):
     else:
         return 0
 
-class MySearchView(SearchView):
-    def extra_context(self):
-        context = super(MySearchView, self).extra_context()
-        context['title'] = '搜索'
-        context['guest_cart'] = 1
-        context['cart_count'] = cart_count(self.request)
-        return context
 
+def ordinary_search(request):
+
+    from django.db.models import Q
+    search_keywords = request.GET.get('q', '')
+    pindex = request.GET.get('pindex', 1)
+    search_status = True
+    cart_count, guest_cart = 0, 0
+    user_id = request.session['user_id']
+    if user_id:
+        guest_cart = 1
+        cart_count = CartInfo.objects.filter(user_id=int(user_id)).count()
+
+    if search_keywords:
+        goods_list = GoodsInfo.objects.filter(Q(gtitle__icontains=search_keywords) |
+                                         Q(gcontent__icontains=search_keywords) |
+                                         Q(gjianjie__icontains=search_keywords)).order_by("gclick")
+    else:
+        search_status = False
+        goods_list = GoodsInfo.objects.all().order_by("gclick")
+
+    paginator = Paginator(goods_list, 4)
+    page = paginator.page(int(pindex))
+
+    context = {
+        'title': '搜索列表',
+        'search_status': search_status,
+        'guest_cart': guest_cart,
+        'cart_count': cart_count,
+        'page': page,
+        'paginator': paginator,
+    }
+    return render(request, 'df_goods/ordinary_search.html', context)
