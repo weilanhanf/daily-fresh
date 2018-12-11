@@ -8,7 +8,7 @@ from django.shortcuts import render, HttpResponse
 
 from df_user.models import UserInfo
 from df_user import user_decorator
-from .models import *
+from df_order.models import OrderInfo, OrderDetailInfo
 
 
 @user_decorator.login

@@ -3,14 +3,13 @@
 
 from django.conf.urls import url
 
-from . import views
-from .views import MySearchView
+from df_goods.views import MySearchView, index, list, detail
 
 app_name = 'df_goods'
 
 urlpatterns = [
-    url('^$', views.index),
-    url('^list(\d+)_(\d+)_(\d+)/$', views.list),
-    url('^(\d+)/$', views.detail),
+    url('^$', index),
+    url('^list(\d+)_(\d+)_(\d+)/$', list),
+    url('^(\d+)/$', detail),
     url(r'^search/', MySearchView()),  # 全文检索
 ]

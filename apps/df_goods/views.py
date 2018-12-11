@@ -1,20 +1,19 @@
-from df_cart.models import CartInfo
 from django.core.paginator import Paginator
 from django.shortcuts import render, HttpResponse
 from haystack.views import SearchView
 
+from df_cart.models import CartInfo
 from df_user.models import GoodsBrowser
-from .models import *
+from df_goods.models import GoodsInfo, TypeInfo
 
 
-# Create your views here.
 def index(request):
-    #查询各个分类的最新4条，最热4条数据
+    # 查询各个分类的最新4条，最热4条数据
     typelist = TypeInfo.objects.all()
     print(len(typelist), 'asdf')
     # 连表操作（了不起的双下划线）利用双下划线和 _set将表之间的操作连接起来
-    type0 = typelist[0].goodsinfo_set.order_by('-id')[0:4]#按照最新上传的水果显示
-    type01 = typelist[0].goodsinfo_set.order_by('-gclick')[0:4]#按照用户点击量上传
+    type0 = typelist[0].goodsinfo_set.order_by('-id')[0:4]  # 按照最新上传的水果显示
+    type01 = typelist[0].goodsinfo_set.order_by('-gclick')[0:4]  # 按照用户点击量上传
     type1 = typelist[1].goodsinfo_set.order_by('-id')[0:4]
     type11 = typelist[1].goodsinfo_set.order_by('-gclick')[0:4]
     type2 = typelist[2].goodsinfo_set.order_by('-id')[0:4]
@@ -26,7 +25,7 @@ def index(request):
     type5 = typelist[5].goodsinfo_set.order_by('-id')[0:4]
     type51 = typelist[5].goodsinfo_set.order_by('-gclick')[0:4]
 
-    #判断是否存在登录状态
+    # 判断是否存在登录状态
     try:
         user_id = request.session['user_id']
         cart_count = CartInfo.objects.filter(user_id=int(user_id)).count
@@ -36,12 +35,12 @@ def index(request):
         'title': '首页',
         'cart_count': cart_count,
         'guest_cart':1,
-        'type0':type0, 'type01':type01,
-        'type1':type1, 'type11':type11,
-        'type2':type2, 'type21':type21,
-        'type3':type3, 'type31':type31,
-        'type4':type4, 'type41':type41,
-        'type5':type5, 'type51':type51,
+        'type0': type0, 'type01': type01,
+        'type1': type1, 'type11': type11,
+        'type2': type2, 'type21': type21,
+        'type3': type3, 'type31': type31,
+        'type4': type4, 'type41': type41,
+        'type5': type5, 'type51': type51,
     }
     """
     
@@ -72,30 +71,27 @@ def index(request):
 
     print(context)
     """
-
-    # print(type0, type01)
-    # for i in type0:
-    #     print(i.gpic)
     return render(request, 'df_goods/index.html', context)
 
+
 def list(request, tid, pindex, sort):
-    #tid：商品种类信息  pindex：商品页码 sort：商品显示分类方式
+    # tid：商品种类信息  pindex：商品页码 sort：商品显示分类方式
     typeinfo = TypeInfo.objects.get(pk=int(tid))
-    #根据主键查找当前的商品分类  海鲜或者水果
+    # 根据主键查找当前的商品分类  海鲜或者水果
     news = typeinfo.goodsinfo_set.order_by('-id')[0:2]
-    #list.html左侧最新商品推荐
+    # list.html左侧最新商品推荐
     goods_list = []
     # list中间栏商品显示方式
-    if sort == '1':#默认最新
+    if sort == '1':  # 默认最新
         goods_list = GoodsInfo.objects.filter(gtype_id=int(tid)).order_by('-id')
-    elif sort == '2':#按照价格
+    elif sort == '2':  # 按照价格
         goods_list = GoodsInfo.objects.filter(gtype_id=int(tid)).order_by('-gprice')
-    elif sort == '3':#按照人气点击量
+    elif sort == '3':  # 按照人气点击量
         goods_list = GoodsInfo.objects.filter(gtype_id=int(tid)).order_by('-gclick')
 
-    #创建Paginator一个分页对象
+    # 创建Paginator一个分页对象
     paginator = Paginator(goods_list, 4)
-    #返回Page对象，包含商品信息
+    # 返回Page对象，包含商品信息
     page = paginator.page(int(pindex))
     context = {
         'title': '商品列表',
@@ -108,9 +104,10 @@ def list(request, tid, pindex, sort):
     }
     return render(request, 'df_goods/list.html', context)
 
+
 def detail(request, id):
     goods = GoodsInfo.objects.get(pk=int(id))
-    goods.gclick = goods.gclick+1#商品点击量
+    goods.gclick = goods.gclick+1  # 商品点击量
     goods.save()
 
     news = goods.gtype.goodsinfo_set.order_by('-id')[0:2]
@@ -119,11 +116,11 @@ def detail(request, id):
         'guest_cart': 1,
         'goods': goods,
         'news': news,
-        'id':id,
+        'id': id,
     }
     response=render(request, 'df_goods/detail.html', context)
 
-    #使用列表   记录最近浏览， 在用户中心使用
+    # 使用列表   记录最近浏览， 在用户中心使用
     # goods_ids = request.COOKIES.get('goods_ids', '')#在cookie中建立一个商品id的对应最近浏览的商品
     # goods_id = '%d' %goods.id#将url转化为整型
     # if goods_ids != '':#判断是否存在浏览记录，如果存在则继续判断，

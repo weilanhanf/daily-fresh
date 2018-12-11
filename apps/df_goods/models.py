@@ -8,6 +8,10 @@ class TypeInfo(models.Model):
     isDelete = models.BooleanField(default=False)
     ttitle = models.CharField(max_length=20, verbose_name="分类")
 
+    class Meta:
+        verbose_name = "商品类型"
+        verbose_name_plural = verbose_name
+
     def __str__(self):
         return self.ttitle
 
@@ -24,6 +28,10 @@ class GoodsInfo(models.Model):
     gcontent = HTMLField(max_length=200, verbose_name="详情")
     gtype = models.ForeignKey(TypeInfo, on_delete=models.CASCADE, verbose_name="分类")  # 外键关联TypeInfo表
     # gadv = models.BooleanField(default=False) #商品是否推荐
+
+    class Meta:
+        verbose_name = "商品"
+        verbose_name_plural = verbose_name
 
     def __str__(self):
         return self.gtitle

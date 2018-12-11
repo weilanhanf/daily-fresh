@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 from django.conf.urls import url
 
-from . import views
+from df_cart import views
 
-app_name = 'df_cart'
+app_name = 'apps.df_cart'
 
 urlpatterns = [
     url(r'^$', views.cart),

@@ -7,8 +7,8 @@ from django.http import JsonResponse
 from django.shortcuts import render, redirect, HttpResponseRedirect
 
 from df_user.models import GoodsBrowser
-from . import user_decorator
-from .models import UserInfo
+from df_user import user_decorator
+from df_user.models import UserInfo
 
 
 def register(request):

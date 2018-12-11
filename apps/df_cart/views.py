@@ -1,8 +1,8 @@
 from django.http import JsonResponse
 from django.shortcuts import render, redirect
 
-from apps.df_user import user_decorator
-from .models import *
+from df_user import user_decorator
+from df_cart.models import *
 
 
 # Create your views here.
