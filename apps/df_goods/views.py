@@ -169,6 +169,7 @@ def detail(request, id):
         pass
     return response
 
+
 def cart_count(request):
     if request.session.has_key('user_id'):
         return CartInfo.objects.filter(user_id=request.session['user_id']).count
