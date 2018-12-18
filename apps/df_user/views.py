@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, HttpResponseRedirect
+from django.shortcuts import render, redirect, HttpResponseRedirect, reverse
 from django.core.paginator import Paginator
 from django.http import JsonResponse
 
@@ -6,8 +6,6 @@ from hashlib import sha1
 
 from .models import GoodsBrowser
 from . import user_decorator
-from .models import UserInfo
-from df_goods.models import GoodsInfo
 from df_order.models import *
 
 
@@ -108,50 +106,19 @@ def login_handle(request):  # 没有利用ajax提交表单
 
 def logout(request):  # 用户登出
     request.session.flush()  # 清空当前用户所有session
-    return redirect('/')
+    return redirect(reverse("df_goods:index"))
 
 
 @user_decorator.login
 def info(request):  # 用户中心
     username = request.session.get('user_name')
     user = UserInfo.objects.filter(uname=username).first()
-    user_id = user.id
-    # user  =  UserInfo.objects.get(id = request.session['user_id'])
-    # print(request.session['user_name'])
-
-    # 列表形式最近浏览
-    # goods_ids  =  request.COOKIES.get('goods_ids', '')
-    # print('cookies', goods_ids)
-    # 在cookie中goods_id以{ 'gooids':'1,5,6,7,8,9'}形式存入
-    # goods_ids1  =  goods_ids.split(',')#拆分为列表
-    # print('最近浏览商品序号',goods_ids1)
-    # goods_list1  =  GoodsInfo.objects.filter(id__in = goods_ids1)#会破坏浏览商品的先后顺序
-    # if goods_ids1[0] ! =  '' :
-    #     goods_list  =  [GoodsInfo.objects.get(id = int(goods_id)) for goods_id in goods_ids1]
-    #     # for goods_id in goods_ids1:
-    #     #     goods_list.append(GoodsInfo.objects.get(id = int(goods_id)))#pk与id区别
-    #     # 每次只查询一个商品并放入列表的最后，保证了浏览商品的顺序
-    #     explain  =  '最近浏览'
-    # else:
-    #     goods_list  =  []
-    #     explain  =  '无最近浏览'
-
-    # 最近浏览计入第三张那个表
-    goods_ids = GoodsBrowser.objects.filter(user_id=user_id)
-    goods_ids1 = [good_browser.good_id for good_browser in goods_ids]
-    # print(goods_ids1)
-    # goods_ids2  =  []
-    # for good_id in goods_ids1:
-    #     if good_id not in goods_ids2:
-    #         goods_ids2.append(good_id)
-    # print(goods_ids2)
-
-    if len(goods_ids1)  != 0:
-        goods_list = [GoodsInfo.objects.get(id=goods_id) for goods_id in goods_ids1]
-        goods_list.reverse()
+    browser_goods = GoodsBrowser.objects.filter(user=user).order_by("-browser_time")
+    goods_list = []
+    if browser_goods:
+        goods_list = [browser_good.good for browser_good in browser_goods]  # 从浏览商品记录中取出浏览商品
         explain = '最近浏览'
     else:
-        goods_list = []
         explain = '无最近浏览'
 
     context = {
@@ -159,7 +126,7 @@ def info(request):  # 用户中心
         'page_name': 1,
         'user_phone': user.uphone,
         'user_address': user.uaddress,
-        'user_name': request.session['user_name'],
+        'user_name': username,
         'goods_list': goods_list,
         'explain': explain,
     }

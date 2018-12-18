@@ -23,12 +23,12 @@ def index(request):
     type5 = typelist[5].goodsinfo_set.order_by('-id')[0:4]
     type51 = typelist[5].goodsinfo_set.order_by('-gclick')[0:4]
 
+    cart_count = 0
     # 判断是否存在登录状态
-    try:
+    if request.session.has_key('user_id'):
         user_id = request.session['user_id']
         cart_count = CartInfo.objects.filter(user_id=int(user_id)).count()
-    except:
-        cart_count = 0
+
     context = {
         'title': '首页',
         'cart_count': cart_count,
@@ -72,7 +72,7 @@ def index(request):
     return render(request, 'df_goods/index.html', context)
 
 
-def list(request, tid, pindex, sort):
+def good_list(request, tid, pindex, sort):
     # tid：商品种类信息  pindex：商品页码 sort：商品显示分类方式
     typeinfo = TypeInfo.objects.get(pk=int(tid))
 
@@ -113,7 +113,7 @@ def list(request, tid, pindex, sort):
 
 def detail(request, id):
     goods = GoodsInfo.objects.get(pk=int(id))
-    goods.gclick = goods.gclick+1  # 商品点击量
+    goods.gclick = goods.gclick + 1  # 商品点击量
     goods.save()
 
     news = goods.gtype.goodsinfo_set.order_by('-id')[0:2]
@@ -124,51 +124,31 @@ def detail(request, id):
         'news': news,
         'id': id,
     }
-    response=render(request, 'df_goods/detail.html', context)
+    response = render(request, 'df_goods/detail.html', context)
 
-    # 使用列表   记录最近浏览， 在用户中心使用
-    # goods_ids = request.COOKIES.get('goods_ids', '')#在cookie中建立一个商品id的对应最近浏览的商品
-    # goods_id = '%d' %goods.id#将url转化为整型
-    # if goods_ids != '':#判断是否存在浏览记录，如果存在则继续判断，
-    #     goods_ids1 = goods_ids.split(',')#拆分为列表
-    #     if goods_ids1.count(goods_id)>=1:#如果商品已经存在记录则删除旧纪录
-    #         goods_ids1.remove(goods_id)
-    #     goods_ids1.insert(0, goods_id)#将商品插入到第一页
-    #     if len(goods_ids1)>=6:#每页只显示五个最近浏览的商品
-    #         del goods_ids1[5]
-    #     goods_ids = ','.join(goods_ids1)#将商品id拼接为字符串
-    # else:
-    #     goods_ids = goods_id#显然第一次查看detail页面时为空，则直接添加
-    # response.set_cookie('goods_ids', goods_ids)#写入cookie
-
-    # 将用户最近浏览商品记录进第三张表
-    '''
-    1,判断是否有用户登录， 如果没有直接结束
-        2,判断在当前浏览表中是否存在这个用户，
-            不存在则创建一个用户浏览记录，并且不用判断是否浏览过
-            若存在则判断当前用户是否存在一个浏览过当前商品
-                3，不管有没有浏览过当前商品都要先创建一个商品记录放入表中
-                    如果浏览过则删除前期浏览的商品
-                    若没有则不用删除
-                    4，如果商品记录为五条，则将最后的一条删除
-
-    '''
-    try:
-        user_id = request.session['user_id']
-        # user_list = GoodsBrowser.objects.filter(user_id=int(user_id))
-        GoodsBrowser.objects.create(user_id=int(user_id))
-        old_user_list = GoodsBrowser.objects.filter(user_id=int(user_id), good_id=int(id))
-        if len(old_user_list) > 1:
-            GoodsBrowser.objects.filter(good_id=int(id)).first().delete()
-        if len(GoodsBrowser.objects.filter(user_id=int(user_id))) > 5:
-            GoodsBrowser.objects.filter(user_id=int(user_id)).first().delete()
-    except:
-        pass
+    if request.session.has_key("user_id"):
+        user_id = request.session["user_id"]
+        try:
+            browsed_good = GoodsBrowser.objects.get(user_id=int(user_id), good_id=int(id))
+        except Exception as e:
+            browsed_good = None
+        if browsed_good:
+            from datetime import datetime
+            browsed_good.browser_time = datetime.now()
+            browsed_good.save()
+        else:
+            GoodsBrowser.objects.create(user_id=int(user_id), good_id=int(id))
+            browsed_goods = GoodsBrowser.objects.filter(user_id=int(user_id))
+            browsed_good_count = browsed_goods.count()
+            if browsed_good_count > 5:
+                ordered_goods = browsed_goods.order_by("-browser_time")
+                for _ in ordered_goods[5:]:
+                    _.delete()
     return response
 
 
 def cart_count(request):
-    if request.session.has_key('user_id'):
+    if request.session.has_key("user_id"):
         return CartInfo.objects.filter(user_id=request.session['user_id']).count
     else:
         return 0

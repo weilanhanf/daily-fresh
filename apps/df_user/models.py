@@ -1,13 +1,15 @@
 from django.db import models
 
+from datetime import datetime
+
 from df_goods.models import GoodsInfo
 
 
 class UserInfo(models.Model):
 
-    uname = models.CharField(max_length=20, verbose_name="用户名")
-    upwd = models.CharField(max_length=40, verbose_name="用户密码")
-    uemail = models.EmailField(verbose_name="邮箱")
+    uname = models.CharField(max_length=20, verbose_name="用户名", unique=True)
+    upwd = models.CharField(max_length=40, verbose_name="用户密码", blank=False)
+    uemail = models.EmailField(verbose_name="邮箱", unique=True)
     ushou = models.CharField(max_length=20, default="", verbose_name="收货地址")
     uaddress = models.CharField(max_length=100, default="", verbose_name="地址")
     uyoubian = models.CharField(max_length=6, default="", verbose_name="邮编")
@@ -26,7 +28,7 @@ class GoodsBrowser(models.Model):
 
     user = models.ForeignKey(UserInfo, on_delete=models.CASCADE, verbose_name="用户ID")
     good = models.ForeignKey(GoodsInfo, on_delete=models.CASCADE, verbose_name="商品ID")
-    browser_order = models.CharField(verbose_name="浏览商品ID", default='')
+    browser_time = models.DateTimeField(default=datetime.now, verbose_name="浏览时间")
 
     class Meta:
         verbose_name = "用户浏览记录"

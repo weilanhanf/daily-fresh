@@ -19,7 +19,7 @@ class TypeInfo(models.Model):
 class GoodsInfo(models.Model):
     # 具体商品信息
     isDelete = models.BooleanField(default=False)  # 逻辑删除
-    gtitle = models.CharField(max_length=20, verbose_name="商品名称")
+    gtitle = models.CharField(max_length=20, verbose_name="商品名称", unique=True)
     gpic = models.ImageField(upload_to='df_goods', verbose_name="图片路径")
     gprice = models.DecimalField(max_digits=5, decimal_places=2, verbose_name="商品价格")  # 商品价格小数位为两位，整数位为3位
     gunit = models.CharField(max_length=20, default='500g', verbose_name="单位重量")

@@ -24,17 +24,5 @@
 #### 购物车
 ![cart](https://raw.githubusercontent.com/weilanhanf/Photos/master/DailyFresh/cart.png)
 
-### Requirements
-#### Environment
-Python 3.5+
-数据库为Django小型数据库sqlite
-#### Install Requirements
-
-Django==2.0.7</br>
-django-haystack==2.8.1</br>
-django-tinymce==2.7.0</br>
-jieba==0.39</br>
-Pillow==5.3.0</br>
-pytz==2018.7</br>
-Whoosh==2.7.4</br>
+重构中...
 
