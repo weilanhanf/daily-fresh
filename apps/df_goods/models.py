@@ -2,7 +2,7 @@ from django.db import models
 from tinymce.models import HTMLField  # 使用富文本编辑框要在settings文件中安装
 # 将一对多的关系维护在GoodsInfo中维护，另外商品信息与分类信息都属于重要信息需要使用逻辑删除
 
-# Create your models here.
+
 class TypeInfo(models.Model):
     # 商品分类信息  水果 海鲜等
     isDelete = models.BooleanField(default=False)
@@ -14,6 +14,7 @@ class TypeInfo(models.Model):
 
     def __str__(self):
         return self.ttitle
+
 
 class GoodsInfo(models.Model):
     # 具体商品信息

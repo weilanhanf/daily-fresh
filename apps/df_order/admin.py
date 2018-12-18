@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from df_order.models import OrderDetailInfo, OrderInfo
+from .models import OrderDetailInfo, OrderInfo
 
 
 @admin.register(OrderInfo)

@@ -1,9 +1,6 @@
-#!/user/bin/env python
-# -*- coding: utf-8 -*-
-
 from django.conf.urls import url
 
-from df_goods import views
+from . import views
 
 app_name = 'df_goods'
 

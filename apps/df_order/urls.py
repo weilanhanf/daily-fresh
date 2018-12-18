@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 from django.conf.urls import url
 
-from df_order import views
+from . import views
 
 app_name = 'df_order'
 

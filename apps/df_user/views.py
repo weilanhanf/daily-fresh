@@ -4,11 +4,11 @@ from django.http import JsonResponse
 
 from hashlib import sha1
 
+from .models import GoodsBrowser
+from . import user_decorator
+from .models import UserInfo
 from df_goods.models import GoodsInfo
 from df_order.models import *
-from df_user.models import GoodsBrowser
-from df_user import user_decorator
-from df_user.models import UserInfo
 
 
 def register(request):
@@ -21,38 +21,34 @@ def register(request):
 
 def register_handle(request):
 
-    post = request.POST
-    uname = post.get('user_name')
-    upwd = post.get('pwd')
-    upwd2 = post.get('cpwd')
-    uemail = post.get('email')
+    username = request.POST.get('user_name')
+    password = request.POST.get('pwd')
+    confirm_pwd = request.POST.get('confirm_pwd')
+    email = request.POST.get('email')
 
     # 判断两次密码一致性
-    if upwd != upwd2:
+    if password != confirm_pwd:
         return redirect('/user/register/')
     # 密码加密
     s1 = sha1()
-    s1.update(upwd.encode('utf8'))
-    upwd3 = s1.hexdigest()
+    s1.update(password.encode('utf8'))
+    encrypted_pwd = s1.hexdigest()
 
     # 创建对象
-    user = UserInfo()
-    user.uname = uname
-    user.upwd = upwd3
-    user.uemail = uemail
-    user.save()
-
+    UserInfo.objects.create(uname=username,
+                           upwd=encrypted_pwd,
+                           uemail=email)
     # 注册成功
     context = {
         'title': '用户登陆',
-        'uname': uname,
+        'username': username,
     }
     return render(request, 'df_user/login.html', context)
 
 
 def register_exist(request):
-    uname = request.GET.get('uname')
-    count = UserInfo.objects.filter(uname=uname).count()
+    username = request.GET.get('uname')
+    count = UserInfo.objects.filter(uname=username).count()
     if count == 0:
         print('当前用户名可用')
     return JsonResponse({'count': count})
@@ -71,10 +67,9 @@ def login(request):
 
 def login_handle(request):  # 没有利用ajax提交表单
     # 接受请求信息
-    post = request.POST
-    uname = post.get('username')
-    upwd = post.get('pwd')
-    jizhu = post.get('jizhu', 0)
+    uname = request.POST.get('username')
+    upwd = request.POST.get('pwd')
+    jizhu = request.POST.get('jizhu', 0)
     users = UserInfo.objects.filter(uname=uname)
     if len(users) == 1:  # 判断用户密码并跳转
         s1 = sha1()
@@ -86,7 +81,7 @@ def login_handle(request):  # 没有利用ajax提交表单
             if jizhu != 0:
                 red.set_cookie('uname', uname)
             else:
-                red.set_cookie('uname', '' , max_age = -1)  # 设置过期cookie时间，立刻过期
+                red.set_cookie('uname', '', max_age=-1)  # 设置过期cookie时间，立刻过期
             request.session['user_id'] = users[0].id
             request.session['user_name'] = uname
             return red
@@ -120,6 +115,7 @@ def logout(request):  # 用户登出
 def info(request):  # 用户中心
     username = request.session.get('user_name')
     user = UserInfo.objects.filter(uname=username).first()
+    user_id = user.id
     # user  =  UserInfo.objects.get(id = request.session['user_id'])
     # print(request.session['user_name'])
 
@@ -141,8 +137,7 @@ def info(request):  # 用户中心
     #     explain  =  '无最近浏览'
 
     # 最近浏览计入第三张那个表
-    goods_ids = GoodsBrowser.objects.filter(user_id=request.session['user_id'])
-    # print(goods_ids)
+    goods_ids = GoodsBrowser.objects.filter(user_id=user_id)
     goods_ids1 = [good_browser.good_id for good_browser in goods_ids]
     # print(goods_ids1)
     # goods_ids2  =  []
@@ -175,7 +170,7 @@ def info(request):  # 用户中心
 def order(request, index):
     user_id = request.session['user_id']
     orders_list = OrderInfo.objects.filter(user_id=int(user_id)).order_by('-odate')
-    paginator = Paginator(orders_list,2)
+    paginator = Paginator(orders_list, 2)
     page = paginator.page(int(index))
     context = {
         'paginator': paginator,
@@ -191,11 +186,10 @@ def order(request, index):
 def site(request):
     user = UserInfo.objects.get(id=request.session['user_id'])
     if request.method == "POST":
-        post = request.POST
-        user.ushou = post.get('ushou')
-        user.uaddress = post.get('uaddress')
-        user.uyoubian = post.get('uyoubian')
-        user.uphone = post.get('uphone')
+        user.ushou = request.POST.get('ushou')
+        user.uaddress = request.POST.get('uaddress')
+        user.uyoubian = request.POST.get('uyoubian')
+        user.uphone = request.POST.get('uphone')
         user.save()
     context = {
         'page_name': 1,

@@ -1,9 +1,9 @@
 from django.core.paginator import Paginator
 from django.shortcuts import render
 
+from .models import GoodsInfo, TypeInfo
 from df_cart.models import CartInfo
 from df_user.models import GoodsBrowser
-from df_goods.models import GoodsInfo, TypeInfo
 
 
 def index(request):
@@ -156,10 +156,7 @@ def detail(request, id):
     try:
         user_id = request.session['user_id']
         # user_list = GoodsBrowser.objects.filter(user_id=int(user_id))
-        goods_browser = GoodsBrowser()
-        goods_browser.user_id = int(user_id)
-        goods_browser.good_id = int(id)
-        goods_browser.save()
+        GoodsBrowser.objects.create(user_id=int(user_id))
         old_user_list = GoodsBrowser.objects.filter(user_id=int(user_id), good_id=int(id))
         if len(old_user_list) > 1:
             GoodsBrowser.objects.filter(good_id=int(id)).first().delete()

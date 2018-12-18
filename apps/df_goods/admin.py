@@ -1,7 +1,7 @@
 # superuser: root 123123...
 
 from django.contrib import admin
-from df_goods.models import TypeInfo,GoodsInfo
+from .models import TypeInfo,GoodsInfo
 
 # Register your models here.
 # 注册模型类  普通方法

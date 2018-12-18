@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 from django.conf.urls import url
 
-from df_user.views import *
+from .views import *
 
 app_name = 'df_user'
 
