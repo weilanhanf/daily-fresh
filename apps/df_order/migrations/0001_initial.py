@@ -20,7 +20,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('price', models.DecimalField(decimal_places=2, max_digits=6)),
                 ('count', models.IntegerField()),
-                ('goods', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='apps.df_goods.GoodsInfo')),
+                ('goods', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='df_goods.GoodsInfo')),
             ],
         ),
         migrations.CreateModel(
@@ -31,12 +31,12 @@ class Migration(migrations.Migration):
                 ('oIsPay', models.BooleanField(default=False)),
                 ('ototal', models.DecimalField(decimal_places=2, max_digits=8)),
                 ('oaddress', models.CharField(max_length=150)),
-                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='apps.df_user.UserInfo')),
+                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='df_user.UserInfo')),
             ],
         ),
         migrations.AddField(
             model_name='orderdetailinfo',
             name='order',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='apps.df_order.OrderInfo'),
+            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='df_order.OrderInfo'),
         ),
     ]

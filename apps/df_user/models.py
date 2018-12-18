@@ -26,7 +26,7 @@ class GoodsBrowser(models.Model):
 
     user = models.ForeignKey(UserInfo, on_delete=models.CASCADE, verbose_name="用户ID")
     good = models.ForeignKey(GoodsInfo, on_delete=models.CASCADE, verbose_name="商品ID")
-    # browser_order = models.CharField(verbose_name="浏览商品ID", default='')
+    browser_order = models.CharField(verbose_name="浏览商品ID", default='')
 
     class Meta:
         verbose_name = "用户浏览记录"

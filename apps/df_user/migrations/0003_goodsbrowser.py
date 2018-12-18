@@ -16,8 +16,8 @@ class Migration(migrations.Migration):
             name='GoodsBrowser',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('good', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='apps.df_goods.GoodsInfo')),
-                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='apps.df_user.UserInfo')),
+                ('good', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='df_goods.GoodsInfo')),
+                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='df_user.UserInfo')),
             ],
         ),
     ]
