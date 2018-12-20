@@ -36,7 +36,7 @@
 
 {% block body %}
 	<div class="login_top clearfix">
-		<a href="index.html" class="login_logo"><img src="/static/images/logo02.png"></a>
+		<a href="{% url "df_goods:index" %}" class="login_logo"><img src="/static/images/logo02.png"></a>
 	</div>
 
 	<div class="login_form_bg">
@@ -46,10 +46,10 @@
 			<div class="login_form fr">
 				<div class="login_title clearfix">
 					<h1>用户登录</h1>
-					<a href="/user/register/">立即注册</a>
+					<a href="{% url "df_user:register" %}">立即注册</a>
 				</div>
 				<div class="form_input">
-					<form action="/user/login_handle/" method="post">
+					<form action="{% url "df_user:login_handle" %}" method="post">
                         {% csrf_token %}
 						<input type="text" name="username" class="name_input" value="{{ username }}" placeholder="请输入用户名">
 						<div class="user_error">输入错误</div>

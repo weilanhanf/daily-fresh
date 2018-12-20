@@ -14,22 +14,22 @@
 {#                    class="login_info fl"#}
 				<div class="login_btn fl">欢迎您：<em>{{ request.session.user_name }}</em>
                     <span>|</span>
-                    <em><a href="/user/logout/">退出</a></em>
+                    <em><a href="{% url "df_user:logout" %}">退出</a></em>
 				</div>
                 {% else %}
 				<div class="login_btn fl">
-					<a href="/user/login/">登录</a>
+					<a href="{% url "df_user:login" %}">登录</a>
 					<span>|</span>
-					<a href="/user/register/">注册</a>
+					<a href="{% url "df_user:register" %}">注册</a>
 				</div>
                 {% endif %}
 				<div class="user_link fl">
 					<span>|</span>
-					<a href="/user/info/">用户中心</a>
+					<a href="{% url "df_user:info" %}">用户中心</a>
 					<span>|</span>
-					<a href="/cart/">我的购物车</a>
+					<a href="{% url "df_cart:cart" %}">我的购物车</a>
 					<span>|</span>
-					<a href="/user/order/1">我的订单</a>
+					<a href="{% url "df_user:order" 1 %}">我的订单</a>
 				</div>
 			</div>
 		</div>
@@ -47,20 +47,19 @@
                     $('.input_btn').click(function () {
     {#                    alert('ok');#}
                         q = $('.input_text').val();
-                        location.href = '/search/?q='+q+'&page=1'
+                        location.href = '{% url "df_goods:ordinary_search" %}?q='+q+'&page=1'
                     })
                 })
 
             </script>
 			<input type="text" class="input_text fl" name="q" placeholder="搜索商品">
-{#            这里的name值为q#}
 			<input type="button" class="input_btn fr" name="" value="搜索">
 		</div>
 
         {% if guest_cart == 1 %}
             <div class="guest_cart fr">
-                <a href="/cart/" class="cart_name fl">我的购物车</a>
-                <div class="goods_count fl" id="show_count">{{ cart_count }}</div>
+                <a href="{% url "df_cart:cart" %}" class="cart_name fl">我的购物车</a>
+                <div class="goods_count fl" id="show_count">{{ cart_num }}</div>
             </div>
         {% endif %}
 	</div>

@@ -25,7 +25,7 @@
             收件人：<span class="user_info_check">{{ user.ushou }} </span>
             电话：<span class="user_info_check">{{ user.uphone }}</span>
 		</dl>
-		<a href="/user/site/" class="edit_site">编辑收货地址</a>
+		<a href="{% url "df_user:site" %}" class="edit_site">编辑收货地址</a>
 
 	</div>
 	
@@ -97,11 +97,9 @@
 		        text = $(this).text();
 		        if (text == ''){
 		            alert('请填写正确的收货地址');
-                    window.location.href = '/user/site/';
+                    window.location.href = '{% url "df_user:site" %}';
                 }
             });
-
-
 
 		    //获取所有id，拼接成字符串
             cartids = '';
@@ -120,9 +118,6 @@
             $.post('/order/push/',data,function (data) {
                 //成功
 
-{#            alert(cartids);#}
-{#            alert( total);#}
-{#            alert(data);#}
                 if (data.ok == 1){
                     localStorage.setItem('order_finish',2);
 
@@ -130,10 +125,9 @@
 
                         setTimeout(function(){
                             $('.popup_con').fadeOut('fast',function(){
-                                window.location.href = '/user/order/1';
+                                window.location.href = '{% url "df_user:order" 1 %}';
                             });
                         },1000)
-
                     });
                 }
                 else {
@@ -143,19 +137,4 @@
 		});
 	</script>
 {% endblock center_body %}
-{#	<script type="text/javascript" src="/static/js/jquery-1.12.2.js"></script>#}
-{#	<script type="text/javascript">#}
-{#		$('#order_btn').click(function() {#}
-{#			localStorage.setItem('order_finish',2);#}
-{##}
-{#			$('.popup_con').fadeIn('fast', function() {#}
-{##}
-{#				setTimeout(function(){#}
-{#					$('.popup_con').fadeOut('fast',function(){#}
-{#						window.location.href = 'index.html';#}
-{#					});	#}
-{#				},3000)#}
-{#				#}
-{#			});#}
-{#		});#}
-{#	</script>#}
+

@@ -47,8 +47,6 @@ def register_handle(request):
 def register_exist(request):
     username = request.GET.get('uname')
     count = UserInfo.objects.filter(uname=username).count()
-    if count == 0:
-        print('当前用户名可用')
     return JsonResponse({'count': count})
 
 
@@ -100,7 +98,6 @@ def login_handle(request):  # 没有利用ajax提交表单
             'uname': uname,
             'upwd': upwd,
         }
-        print('不存在当前用户')
         return render(request, 'df_user/login.html', context)
 
 

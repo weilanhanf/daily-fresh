@@ -56,7 +56,7 @@
 		}
 		else
 		{
-			$.get('/user/register_exist/?uname='+$('#user_name').val(),function(data){
+			$.get('{% url "df_user:register_exist" %}?uname='+$('#user_name').val(),function(data){
                 if (data.count >= 1) {
                     $('#user_name').next().html('用户名已经存在').show();
                     error_name = true;
@@ -151,10 +151,10 @@
 		<div class="r_con fr">
 			<div class="reg_title clearfix">
 				<h1>用户注册</h1>
-				<a href="/user/login/">登录</a>
+				<a href="{% url "df_user:login" %}">登录</a>
 			</div>
 			<div class="reg_form clearfix">
-				<form action="/user/register_handle/" id='reg_form' method="post">
+				<form action="{% url "df_user:register_handle" %}" id='reg_form' method="post">
                     {% csrf_token %}
 				<ul>
 					<li>

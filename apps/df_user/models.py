@@ -35,4 +35,4 @@ class GoodsBrowser(models.Model):
         verbose_name_plural = verbose_name
 
     def __str__(self):
-        return "{0}的浏览记录".format(self.user.uname)
+        return "{0}浏览记录{1}".format(self.user.uname, self.good.gtitle)

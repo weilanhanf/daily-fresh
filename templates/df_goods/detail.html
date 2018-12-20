@@ -69,12 +69,12 @@
                 {% if request.session.user_name|default:'' != '' %}
                     <a href="javascript:;" class="buy_btn">立即购买</a>
                 {% else %}
-                    <a href="/user/login/" class="buy_btn">立即购买</a>
+                    <a href="{% url "df_user:login" %}" class="buy_btn">立即购买</a>
                 {% endif %}
                 {% if request.session.user_name|default:'' != '' %}
                     <a href="javascript:;" class="add_cart" id="add_cart">加入购物车</a>
                 {% else %}
-                    <a href="/user/login/" class="add_cart" id="add_cart">加入购物车</a>
+                    <a href="{% url "df_user:login" %}" class="add_cart" id="add_cart">加入购物车</a>
                 {% endif %}
 			</div>
 		</div>
@@ -124,8 +124,6 @@
 
 		$(".add_jump").css({'left':$add_y+80,'top':$add_x+10,'display':'block'});
 		$('#add_cart').click(function() {
-{#            alert(url);#}
-            alert('asdf');
             {#		    先判断是否登录#}
             if ($('.login_btn').text().indexOf('登录') >= 0) {
                 alert('请登陆后购买');
