@@ -6,9 +6,11 @@
 {#  通过绑定js事件实现随着商品数量的增长商品总价上涨#}
     function plus() {
         num = parseFloat($('.num_show').val());
-        $('.num_show').val(num+1);
-        $('.num_show').blur();
-
+        kucun = parseFloat($('.goods_kucun').html());
+        if(num<=kucun){
+            $('.num_show').val(num+1);
+            $('.num_show').blur();
+        }
     }
     function minus() {
         num = parseFloat($('.num_show').val());
@@ -17,7 +19,10 @@
             $('.num_show').val(num-1);
             $('.num_show').blur();
         }
-{#商品的数量不可以小于1#}
+        else {
+
+            {#商品的数量不可以小于1#}
+        }
 
     }
     $(function () {
@@ -67,7 +72,7 @@
 			<div class="total">总价：<em id="gtotal">{{ goods.gprice }}元</em></div>
 			<div class="operate_btn">
                 {% if request.session.user_name|default:'' != '' %}
-                    <a href="javascript:;" class="buy_btn">立即购买</a>
+                    <a href="javascript:;" class="buy_btn" id="buy_now">立即购买</a>
                 {% else %}
                     <a href="{% url "df_user:login" %}" class="buy_btn">立即购买</a>
                 {% endif %}
@@ -114,7 +119,7 @@
 
 	<div class="add_jump"></div>
 
-	<script type="text/javascript" src="/js/jquery-1.12.2.js"></script>
+	<script type="text/javascript" src="/static/js/jquery-1.12.4.min.js"></script>
 	<script type="text/javascript">
 		var $add_x = $('#add_cart').offset().top;
 		var $add_y = $('#add_cart').offset().left;
@@ -127,7 +132,7 @@
             {#		    先判断是否登录#}
             if ($('.login_btn').text().indexOf('登录') >= 0) {
                 alert('请登陆后购买');
-                location.href('/user/login/');
+                location.href = {% url "df_user:login" %};
                 return;
 
             }
@@ -150,8 +155,15 @@
             });
 
         });
+		$("#buy_now").click(function () {
+            num = parseInt($('.num_show').val());
+{#            location.href = "/cart/add{{ goods.id }}_'+num+'/'";#}
+            alert(num);
+            location.href = {% url "df_user:login" %};
+
+
+        });
 		$.get('/cart/',function (data) {
-{#                alert('data.count');#}
                 $('#show_count').text(data.count);
             });
 	</script>

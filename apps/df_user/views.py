@@ -33,9 +33,7 @@ def register_handle(request):
     encrypted_pwd = s1.hexdigest()
 
     # 创建对象
-    UserInfo.objects.create(uname=username,
-                           upwd=encrypted_pwd,
-                           uemail=email)
+    UserInfo.objects.create(uname=username, upwd=encrypted_pwd, uemail=email)
     # 注册成功
     context = {
         'title': '用户登陆',
@@ -161,4 +159,3 @@ def site(request):
         'user': user,
     }
     return render(request, 'df_user/user_center_site.html', context)
-
