@@ -132,11 +132,17 @@ def cart_count(request):
 def ordinary_search(request):
 
     from django.db.models import Q
+
     search_keywords = request.GET.get('q', '')
     pindex = request.GET.get('pindex', 1)
     search_status = True
     cart_num, guest_cart = 0, 0
-    user_id = request.session['user_id']
+
+    try:
+        user_id = request.session['user_id']
+    except:
+        user_id = None
+
     if user_id:
         guest_cart = 1
         cart_num = CartInfo.objects.filter(user_id=int(user_id)).count()
