@@ -56,7 +56,7 @@
         {% for cart in carts %}
         <ul class="goods_list_td clearfix" id="{{ cart.id }}">
 			<li class="col01">{{ forloop.counter }}</li>
-			<li class="col02"><img src="/static/{{ cart.goods.gpic }}/"></li>
+			<li class="col02"><img src="/static/{{ cart.goods.gpic }}"></li>
 			<li class="col03">{{ cart.goods.gtitle }}</li>
 			<li class="col04">{{ cart.goods.gunit }}</li>
 			<li class="col05">{{ cart.goods.gprice }}</li>
@@ -95,11 +95,15 @@
 		    //检查当前收货地址是否正确
 		    $('.user_info_check').each(function () {
 		        text = $(this).text();
+				number = 0;
 		        if (text == ''){
-		            alert('请填写正确的收货地址');
-                    window.location.href = '{% url "df_user:site" %}';
-                }
+					number = 1;
+				}
             });
+			if (number == 1){
+				alert('请填写正确的收货地址');
+				window.location.href = '{% url "df_user:site" %}';
+			}
 
 		    //获取所有id，拼接成字符串
             cartids = '';

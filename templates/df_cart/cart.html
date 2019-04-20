@@ -42,7 +42,6 @@
         });
 {#         $('#check_goods').click(function () {#}
 {#             c = $(this).attr('checked');#}
-{#             alert(c);#}
 {#         });#}
         //在blur事件里ajax 提交
         $('.num_show').blur(function () {
@@ -131,7 +130,8 @@
         //删掉最后一个&
 
         s=s.substring(0,s.length-1);
-        alert(s);
+		
+		{#                        alert(s);#}
         location.href = '/order?'+s ;
 
         }
