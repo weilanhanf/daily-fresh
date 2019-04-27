@@ -14,7 +14,7 @@ class CartInfo(models.Model):
 
     user = models.ForeignKey(UserInfo, on_delete=models.CASCADE, verbose_name="用户")
     goods = models.ForeignKey(GoodsInfo, on_delete=models.CASCADE, verbose_name="商品")
-    count = models.IntegerField(verbose_name="")  # 记录用户买个多少单位的商品
+    count = models.IntegerField(verbose_name="", default=0)  # 记录用户买个多少单位的商品
 
     class Meta:
         verbose_name = "购物车"

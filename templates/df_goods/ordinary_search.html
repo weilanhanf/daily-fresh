@@ -1,4 +1,10 @@
 {% extends 'base.html' %}
+{% block head %}
+<script>
+
+</script>
+{% endblock %}
+
 {% block center_body %}
     <div class="navbar_con">
 		<div class="navbar clearfix">
@@ -23,7 +29,11 @@
 			</ul>
 		</div>
 	</div>
-
+    <script type="text/javascript">
+        if({{ search_status }}==0){
+            alert("您的查询结果为空，为您推荐以下商品");
+        }
+    </script>
 	<div class="breadcrumb">
 		全部分类
 {#        {{ title }}#}

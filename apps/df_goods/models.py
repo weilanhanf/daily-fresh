@@ -23,9 +23,9 @@ class GoodsInfo(models.Model):
     gpic = models.ImageField(upload_to='df_goods', verbose_name="图片路径")
     gprice = models.DecimalField(max_digits=5, decimal_places=2, verbose_name="商品价格")  # 商品价格小数位为两位，整数位为3位
     gunit = models.CharField(max_length=20, default='500g', verbose_name="单位重量")
-    gclick = models.IntegerField(verbose_name="点击量")
+    gclick = models.IntegerField(verbose_name="点击量", default=0, null=False)
     gjianjie = models.CharField(max_length=200, verbose_name="简介")
-    gkucun = models.IntegerField(verbose_name="库存")
+    gkucun = models.IntegerField(verbose_name="库存", default=0)
     gcontent = HTMLField(max_length=200, verbose_name="详情")
     gtype = models.ForeignKey(TypeInfo, on_delete=models.CASCADE, verbose_name="分类")  # 外键关联TypeInfo表
     # gadv = models.BooleanField(default=False) #商品是否推荐

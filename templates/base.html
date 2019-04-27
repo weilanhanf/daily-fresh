@@ -45,9 +45,13 @@
              <script>
                 $(function () {
                     $('.input_btn').click(function () {
-    {#                    alert('ok');#}
                         q = $('.input_text').val();
-                        location.href = '{% url "df_goods:ordinary_search" %}?q='+q+'&page=1'
+                        if(q==""){
+                        alert("请输入搜索内容");
+                        }
+                        else{
+                            location.href = '{% url "df_goods:ordinary_search" %}?q='+q+'&page=1'
+                        }
                     })
                 })
 

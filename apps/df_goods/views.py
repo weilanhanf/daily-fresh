@@ -55,7 +55,11 @@ def good_list(request, tid, pindex, sort):
     goods_list = []
     # list中间栏商品显示方式
     cart_num, guest_cart = 0, 0
-    user_id = request.session['user_id']
+
+    try:
+        user_id = request.session['user_id']
+    except:
+        user_id = None
     if user_id:
         guest_cart = 1
         cart_num = CartInfo.objects.filter(user_id=int(user_id)).count()
@@ -135,7 +139,7 @@ def ordinary_search(request):
 
     search_keywords = request.GET.get('q', '')
     pindex = request.GET.get('pindex', 1)
-    search_status = True
+    search_status = 1
     cart_num, guest_cart = 0, 0
 
     try:
@@ -147,14 +151,15 @@ def ordinary_search(request):
         guest_cart = 1
         cart_num = CartInfo.objects.filter(user_id=int(user_id)).count()
 
-    if search_keywords:
-        goods_list = GoodsInfo.objects.filter(
-            Q(gtitle__icontains=search_keywords) |
-            Q(gcontent__icontains=search_keywords) |
-            Q(gjianjie__icontains=search_keywords)).order_by("gclick")
-    else:
-        search_status = False
-        goods_list = GoodsInfo.objects.all().order_by("gclick")
+    goods_list = GoodsInfo.objects.filter(
+        Q(gtitle__icontains=search_keywords) |
+        Q(gcontent__icontains=search_keywords) |
+        Q(gjianjie__icontains=search_keywords)).order_by("gclick")
+
+    if goods_list.count() == 0:
+        # 商品搜索结果为空，返回推荐商品
+        search_status = 0
+        goods_list = GoodsInfo.objects.all().order_by("gclick")[:4]
 
     paginator = Paginator(goods_list, 4)
     page = paginator.page(int(pindex))

@@ -13,8 +13,8 @@ class TypeInfoAdmin(admin.ModelAdmin):
 
 class GoodsInfoAdmin(admin.ModelAdmin):
     list_per_page = 20
-    list_display = ['id', 'gtitle', 'gunit', 'gclick', 'gprice', 'gpic', 'gkucun', 'gcontent', 'gjianjie']
-    list_editable = ['gkucun', 'gcontent', 'gjianjie']
+    list_display = ['id', 'gtitle', 'gunit', 'gclick', 'gprice', 'gpic', 'gkucun', 'gjianjie']
+    list_editable = ['gkucun', ]
     readonly_fields = ['gclick']
     search_fields = ['gtitle', 'gcontent', 'gjianjie']
     list_display_links = ['gtitle']
