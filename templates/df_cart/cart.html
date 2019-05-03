@@ -152,7 +152,7 @@
     {% for cart in carts %}
 	<ul class="cart_list_td clearfix" id="{{ cart.id }}">
 		<li class="col01"><input type="checkbox" name="" id="check_goods" checked="checked"></li>
-		<li class="col02"><img src="/static/{{ cart.goods.gpic }}"></li>
+		<li class="col02"><img src="{{ MEDIA_URL }}{{ cart.goods.gpic }}"></li>
 		<li class="col03">{{ cart.goods.gtitle }}<br><em>{{ cart.goods.gprice }}元/{{ cart.goods.gunit }}</em><br><em>库存：<span id="goods_kucun">{{ cart.goods.gkucun }}</span></em></li>
 		<li class="col04">{{ cart.goods.gunit }}</li>
 		<li class="col05">{{ cart.goods.gprice }}</li>

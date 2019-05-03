@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
-{% block head %}
-<script>
 
-</script>
+{% load staticfiles %}
+
+{% block head %}
+
 {% endblock %}
 
 {% block center_body %}
@@ -46,7 +47,7 @@
         <ul class="goods_type_list clearfix">
             {%  for item in page %}
             <li>
-                <a href="/{{ item.id }}/"><img src="/static/{{ item.gpic }}"></a>
+                <a href="/{{ item.id }}/"><img src="{{ MEDIA_URL }}{{ item.gpic }}"></a>
                 <h4><a href="/{{ item.id }}/">{{ item.gtitle }}</a></h4>
                 <div class="operate">
                     <span class="prize">￥{{ item.gprice }}</span>

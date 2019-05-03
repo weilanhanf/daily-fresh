@@ -75,7 +75,7 @@
 {#                    按照商品的最新上穿建立显示#}
                 <li>
                     <h4><a href="/{{ goods.id }}/">{{ goods.gtitle }}</a></h4>
-                    <a href="/{{ goods.id }}/"><img src="/static/{{ goods.gpic }}"></a>
+                    <a href="/{{ goods.id }}/"><img src="{{ MEDIA_URL }}{{ goods.gpic }}"></a>
                     <div class="prize"> ￥ {{ goods.gprice }} </div>
                 </li>
                 {% endfor %}
@@ -103,7 +103,7 @@
                 {% for goods in type11 %}
                 <li>
                     <h4><a href="/{{ goods.id }}/">{{ goods.gtitle }}</a></h4>
-                    <a href="/{{ goods.id }}/"><img src="/static/{{ goods.gpic }}"></a>
+                    <a href="/{{ goods.id }}/"><img src="{{ MEDIA_URL }}{{ goods.gpic }}"></a>
 {#                    静态文件添加目录static前一定加"/"#}
                     <div class="prize"> ￥ {{ goods.gprice }} </div>
                 </li>

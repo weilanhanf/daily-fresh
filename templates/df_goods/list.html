@@ -17,7 +17,7 @@
                     {% for goods in news %}
 {#                        新品推荐两种#}
                         <li>
-                            <a href="/{{ goods.id }}"><img src="/static/{{ goods.gpic }}"></a>
+                            <a href="/{{ goods.id }}"><img src="{{ MEDIA_URL }}{{ goods.gpic }}"></a>
     						<h4><a href="/{{ goods.id }}">{{ goods.gtitle }}</a></h4>
     						<div class="prize">￥{{ goods.gprice }}</div>
                         </li>
@@ -65,7 +65,7 @@
 
                 {%  for g in page %}
                 <li>
-					<a href="/{{ g.id }}/"><img src="/static/{{ g.gpic }}"></a>
+					<a href="/{{ g.id }}/"><img src="{{ MEDIA_URL }}{{ g.gpic }}"></a>
 					<h4><a href="/{{ g.id }}/">{{ g.gtitle }}</a></h4>
 					<div class="operate">
 						<span class="prize">￥{{ g.gprice }}</span>

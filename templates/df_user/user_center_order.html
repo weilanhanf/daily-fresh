@@ -26,7 +26,7 @@
 							<td width="55%">
                                 {% for order_detail in orderinfo.orderdetailinfo_set.all %}
 								<ul class="order_goods_list clearfix">					
-									<li class="col01"><img src="/static/{{ order_detail.goods.gpic }}"></li>
+									<li class="col01"><img src="{{ MEDIA_URL }}{{ order_detail.goods.gpic }}"></li>
                                     <li class="col02">{{ order_detail.goods.gtitle }}<em class="good_price">{{ order_detail.goods.gprice }}</em>元/<em>{{ order_detail.goods.gunit }}</em></li>
 									<li class="col03">{{ order_detail.count }}件</li>
 									<li class="col04">11.80元</li>	

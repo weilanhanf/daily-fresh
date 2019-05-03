@@ -56,7 +56,7 @@
         {% for cart in carts %}
         <ul class="goods_list_td clearfix" id="{{ cart.id }}">
 			<li class="col01">{{ forloop.counter }}</li>
-			<li class="col02"><img src="/static/{{ cart.goods.gpic }}"></li>
+			<li class="col02"><img src="{{ MEDIA_URL }}{{ cart.goods.gpic }}"></li>
 			<li class="col03">{{ cart.goods.gtitle }}</li>
 			<li class="col04">{{ cart.goods.gunit }}</li>
 			<li class="col05">{{ cart.goods.gprice }}</li>

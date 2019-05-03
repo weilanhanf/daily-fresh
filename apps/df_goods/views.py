@@ -1,6 +1,7 @@
 from django.core.paginator import Paginator
 from django.shortcuts import render
 
+from df_user.models import UserInfo
 from .models import GoodsInfo, TypeInfo
 from df_cart.models import CartInfo
 from df_user.models import GoodsBrowser
