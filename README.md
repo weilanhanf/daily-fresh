@@ -16,23 +16,6 @@
 
 ## 在线样例：
 
-### 在线地址
-
-[http://39.108.176.210](http://39.108.176.210)
-
-账号：weilanhanf
-
-密码：weilanhanf
-
-### 管理人员入口
-
-[http://39.108.176.210/admin](http://39.108.176.210/admin)
-
-账号：root
-
-密码：rootroot
-
-
 ## 预览：
 ### 首页
 ![index](https://raw.githubusercontent.com/weilanhanf/Photos/master/DailyFresh/index.png)
@@ -85,4 +68,4 @@
 
 ### 联系：
 
-如需联系请前往博客园留言 <a href="https://www.cnblogs.com/welan/p/9231530.html" target="_blank">蔚蓝的蓝</a>
+如需联系请前往博客园留言 <a href="https://www.cnblogs.com/welan/p/9231530.html" target="_blank">链接</a>
